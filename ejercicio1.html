@@ -1,0 +1,58 @@
+<!--
+He procurado hacer que la estructura fuese lo más parecida posible a lo insertado
+tal como lo veía en el documento, he intentado sacar los píxeles lo más perfectos 
+posibles
+-->
+<html>
+<head>
+	<style>
+	
+body {
+	background-color: #f2f2f2;
+}
+
+div.card {
+	width: 45px;
+	height: 46px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	box-shadow: 5px 5px;
+}
+
+@media(min-width: 768px) {
+	div.container {
+		width: 120px;
+	}
+	div.card {
+		float: left;
+		height: 52px;
+	}
+	div.card.big {
+		width: 108px;
+	}
+}
+
+@media(min-width: 992px) {
+	div.container {
+		width: 240px;
+	}
+	div.card.big {
+		width: 105px;
+	}
+}
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card big"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+	</div>
+</body>
+</html>
