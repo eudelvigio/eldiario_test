@@ -6,7 +6,8 @@
 // o bien el defaultvalue.
 
 function accesor(obj, def, path) {
-	var recObj = JSON.parse(JSON.stringify(obj));
+	// var recObj = JSON.parse(JSON.stringify(obj)); Método con problemas para JSON circulares
+	var recObj = Object.assign({}, obj);
 	function safeAccesor(path) {
 		var splittedPath = path.split('.');
 		splittedPath.forEach((segment) => {
