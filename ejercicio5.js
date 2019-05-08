@@ -15,7 +15,6 @@ function orderNumbers(number) {
 		number = Math.floor(number / 10);
 	}
 	
-	console.log(orderedNumbersObj);
 	var allDigits = Object.keys(orderedNumbersObj);
 	var returnNumber = 0;
 	var acc = 0;
